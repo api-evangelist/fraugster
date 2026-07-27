@@ -1,7 +1,27 @@
 aid: fraugster
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/fraugster.png
 name: Fraugster
-description: Fraugster is a company surfaced as a portfolio company of seedcamp and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Fraugster is a Berlin-based artificial intelligence company focused on
+  payment fraud prevention and transaction risk scoring for online merchants, payment
+  service providers, and acquirers. Its machine-learning platform was designed to
+  analyze payments in real time to detect and block fraudulent transactions while
+  reducing false declines and chargebacks. The company was surfaced through venture
+  portfolio data (backed by Seedcamp) and added to the API Evangelist network. During
+  this enrichment pass the company's public developer surface was not reachable to
+  automated clients (the primary domain returns HTTP 403), so no API specifications,
+  SDKs, or documentation could be harvested; only live infrastructure/domain-security
+  signals were probed.
 url: https://raw.githubusercontent.com/api-evangelist/fraugster/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +31,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Fraud Prevention
+- Payments
+- Machine Learning
+- Artificial Intelligence
+- Risk Management
+- Security
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +47,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/fraugster-domain-security.yml
 - type: Website
   url: http://fraugster.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
