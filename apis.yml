@@ -47,7 +47,7 @@ tags:
 - Company
 - Fraud Prevention
 - Payments
-- Machine-Learning
+- Machine Learning
 - Artificial Intelligence
 - Risk Management
 - Security
@@ -59,6 +59,7 @@ tags_raw:
 - Artificial Intelligence
 - Risk Management
 - Security
+- Machine-Learning
 apis: []
 maintainers:
 - FN: Kin Lane
